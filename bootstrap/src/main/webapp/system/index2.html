@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <script type="text/javascript" src="../boot/js/jquery-3.3.1.min.js" ></script>
+    <script type="text/javascript" src="../boot/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!--导航条标题-->
+        <div class="navbar-header">
+            <a href="" class="navbar-brand">BOOT客户管理系统V2.0</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cd"></span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+                <li><a href="#"><span class="glyphicon glyphicon-facetime-video"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-play"></span></a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-refresh"></span></a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#"><span class="glyphicon glyphicon-hourglass"></span></a></li>
+            </ul>
+        </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-flag"></span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-inbox"></span><span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">One more separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div></div>
+<div class="container-fulid">
+    <div class="row">
+
+        <div class="col-md-2 aa" style="background-color:#effffd">
+             <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search for...">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+            <br/>
+            <div class="list-group ">
+                <button type="button" class="list-group-item">客户管理</button>
+                <button type="button" class="list-group-item">客户拜访</button>
+                <button type="button" class="list-group-item">系统管理</button>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-10 aa">
+            <h1>客户管理</h1>
+            <form class="navbar-form navbar-left" role="search">
+                客户名称：<input type="text" class="form-control" placeholder="Search">
+                &nbsp;
+                客户来源：<select class="form-control input-sm" >
+                            <option >请选择</option>
+                            <option value="1">介绍</option>
+                            <option value="2">送上门的</option>
+                            <option value="3">偶遇</option>
+                        </select>
+                所属行业：<select class="form-control input-sm"  >
+                <option >请选择</option>
+                <option value="1">送外卖的</option>
+                <option value="2">送水的</option>
+                <option value="3">跑腿的</option>
+                </select>
+                客户级别：<select class="form-control input-sm"  >
+                <option >请选择</option>
+                <option value="1">送外卖的</option>
+                <option value="2">送水的</option>
+                <option value="3">跑腿的</option>
+                </select>
+                <div class="form-group">
+                    <input type="text" class="form-control input-sm" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default input-sm">查询</button>
+            </form>
+            <div class="container">
+            <table class="table table-striped table-bordered table-hover">
+                <tr>
+                    <td colspan="8">客户信息列表</td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>客户名称</td>
+                    <td>客户来源</td>
+                    <td>客户所属行业</td>
+                    <td>客户级别</td>
+                    <td>固定电话</td>
+                    <td>手机</td>
+                    <td>操作</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>小黑</td>
+                    <td>腾讯</td>
+                    <td>游戏</td>
+                    <td>至尊VIP</td>
+                    <td>037112316546</td>
+                    <td>15987246921</td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">修改</button>
+                        &nbsp;
+                        <button class="btn btn-danger" type="submit">删除</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>小黑</td>
+                    <td>腾讯</td>
+                    <td>游戏</td>
+                    <td>至尊VIP</td>
+                    <td>037112316546</td>
+                    <td>15987246921</td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">修改</button>
+                        &nbsp;
+                        <button class="btn btn-danger" type="submit">删除</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>小黑</td>
+                    <td>腾讯</td>
+                    <td>游戏</td>
+                    <td>至尊VIP</td>
+                    <td>037112316546</td>
+                    <td>15987246921</td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">修改</button>
+                        &nbsp;
+                        <button class="btn btn-danger" type="submit">删除</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>小黑</td>
+                    <td>腾讯</td>
+                    <td>游戏</td>
+                    <td>至尊VIP</td>
+                    <td>037112316546</td>
+                    <td>15987246921</td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">修改</button>
+                        &nbsp;
+                        <button class="btn btn-danger" type="submit">删除</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>小黑</td>
+                    <td>腾讯</td>
+                    <td>游戏</td>
+                    <td>至尊VIP</td>
+                    <td>037112316546</td>
+                    <td>15987246921</td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">修改</button>
+                        &nbsp;
+                        <button class="btn btn-danger" type="submit">删除</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>小黑</td>
+                    <td>腾讯</td>
+                    <td>游戏</td>
+                    <td>至尊VIP</td>
+                    <td>037112316546</td>
+                    <td>15987246921</td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">修改</button>
+                        &nbsp;
+                        <button class="btn btn-danger" type="submit">删除</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>小黑</td>
+                    <td>腾讯</td>
+                    <td>游戏</td>
+                    <td>至尊VIP</td>
+                    <td>037112316546</td>
+                    <td>15987246921</td>
+                    <td>
+                        <button class="btn btn-primary" type="submit">修改</button>
+                        &nbsp;
+                        <button class="btn btn-danger" type="submit">删除</button>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <nav aria-label="Page navigation ">
+                <ul class="pagination pull-right">
+                    <li>
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li>
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

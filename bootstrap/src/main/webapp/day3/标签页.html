@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <script src="../boot/js/jquery-3.3.1.min.js"></script>
+    <script src="../boot/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<ul class="nav nav-tabs">
+    <li class="active"><a href="" data-toggle="tab">用户模块</a></li>
+    <li><a class="#saveInfo" data-toggle="tab">用户添加</a></li>
+    <li class="dropdown">
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            下啦<span class="caret"></span>
+        </a>
+    </li>
+</ul>
+
+
+<!--标签-->
+<ul class="nav nav-tabs">
+    <li class="active"><a href="#list" data-toggle="tab">用户列表</a></li>
+    <li><a href="#saveInfo" data-toggle="tab">用户添加</a></li>
+    <li class="dropdown">
+        <!--触发器-->
+        <a href="" class="dropdown-toggle" data-toggle="dropdown">
+            下拉菜单 <span class="caret"></span>
+        </a>
+        <!--下拉菜单-->
+        <ul class="dropdown-menu">
+            <li><a href="#SpringMvc" data-toggle="tab">SpringMVC</a></li>
+            <li><a href="#SpringBoot" data-toggle="tab">SpringBOOT</a></li>
+        </ul>
+    </li>
+</ul>
+<!--标签内容组-->
+<div class="tab-content">
+    <!--标签内容面板-->
+    <div class="tab-pane active" id="list">A</div>
+
+    <div class="tab-pane" id="saveInfo">B</div>
+
+</div>
+
+</body>
+</html>

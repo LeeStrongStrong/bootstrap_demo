@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <script src="../boot/js/jquery-3.3.1.min.js"></script>
+    <script src="../boot/js/bootstrap.min.js"></script>
+    <script>
+        $(function () {
+            //展示模态框
+            $("#myModal").modal({
+                show:true,//初始化后立即展示
+                //backdrop:false,
+                //keyboard:false,
+            });
+
+        })
+    </script>
+</head>
+<body>
+
+<!--模态框的创建-->
+<div class="modal fade" id="myModal" data-backdrop="false" data-keyboard="false" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">澳门赌场马上爽</h4>
+            </div>
+
+            <div class="modal-body">
+                <p>美丽荷官在线发牌&hellip;</p>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">进入</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">放弃</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</body>
+</html>

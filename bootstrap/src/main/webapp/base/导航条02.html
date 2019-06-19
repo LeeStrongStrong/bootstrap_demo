@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <!--boot css -->
+    <link rel="stylesheet" href="../boot/css/bootstrap.min.css">
+    <!--jquery js-->
+    <script src="../boot/js/jquery-3.3.1.min.js"></script>
+    <!--boot js-->
+    <script src="../boot/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+
+<!--导航条-->
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <!--导航条标题-->
+        <div class="navbar-header">
+            <a href="" class="navbar-brand">
+                <!--放入图标-->
+               <!-- <img src="../boot/img/aa.jpg" width="20" height="20" alt="">-->
+                <!--放入文本-->
+                后台管理系统
+            </a>
+        </div>
+        <!--导航内容-->
+        <div class="collapse navbar-collapse" >
+            <!--放入表单元素-->
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            <ul class="nav navbar-nav">
+                <!--生成链接-->
+                <li><a href="">Link</a></li>
+                <!--生成按钮-->
+                <li><button class="btn btn-default navbar-btn">按钮</button></li>
+                <!--生成下拉菜单-->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!--放入文本元素-->
+            <p class="navbar-text">Signed in as Mark Otto</p>
+            <!--放入非导航链接-->
+            <p class="navbar-text">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p>
+
+            <!--将元素放在右侧-->
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="">Link</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+</body>
+</html>
